@@ -3123,7 +3123,7 @@ td:last-child {
 }
 
 .s-header__logo img {
-    width         : 100px;
+    width         : 50px;
     margin        : 0;
     vertical-align: bottom;
 }
@@ -3408,9 +3408,9 @@ td:last-child {
 }
 .intro-sub{
     font-size: 23px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-1);
     text-transform: capitalize;
-    line-height: 2;
+    line-height: 1.3;
 }
 .intro-sub span{
     border-bottom: rgb(128, 128, 199) solid 1px;
