@@ -2803,6 +2803,8 @@ td:last-child {
     margin: 0 1.2rem;
 }
 
+
+
 .swiper-container .swiper-pagination-bullet {
     width     : 8px;
     height    : 8px;
@@ -3121,7 +3123,7 @@ td:last-child {
 }
 
 .s-header__logo img {
-    width         : var(--logo-width);
+    width         : 100px;
     margin        : 0;
     vertical-align: bottom;
 }
@@ -3398,7 +3400,22 @@ td:last-child {
     grid-column: 1/span 8;
     margin-top : var(--vspace-1);
 }
-
+.Intro-Heading{
+    padding: 0 0 20px 0 ;
+    color: #5f5e9c;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.intro-sub{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    line-height: 2;
+}
+.intro-sub span{
+    border-bottom: rgb(128, 128, 199) solid 1px;
+    padding: 5px 50px 5px 0;
+}
 .s-intro__content-pretitle {
     font-weight  : 600;
     margin-bottom: var(--vspace-0_125);
@@ -3406,12 +3423,13 @@ td:last-child {
 }
 
 .s-intro__content-title {
-    font-size     : clamp(3.8rem, 4.8vw, 8.8rem);
-    line-height   : 1.045;
+    font-size     : 35px;
+    line-height   : 1.1; /* Increase slightly for better readability with line breaks */
     letter-spacing: -0.025em;
     margin-top    : 0;
     margin-bottom : var(--vspace-1_25);
 }
+
 
 .s-intro__content-btns {
     --color-btn           : var(--color-text-dark);
@@ -3481,9 +3499,9 @@ td:last-child {
  * ## intro btn cv download
  * -------------------------------------------------------------------- */
 .s-intro__btn-download {
-    --color-btn-stroke           : white;
-    --color-btn-stroke-text      : white;
-    --color-btn-stroke-hover     : white;
+    --color-btn-stroke           : rgb(189, 199, 218);
+    --color-btn-stroke-text      : rgb(236, 230, 230);
+    --color-btn-stroke-hover     : rgb(252, 252, 252);
     --color-btn-stroke-hover-text: var(--color-text-dark);
     --hline-width                : min(16rem, 8vw);
     z-index                      : 2;
@@ -4441,3 +4459,4 @@ td:last-child {
         right: -2rem;
     }
 }
+

@@ -167,6 +167,36 @@ pre[class*=language-] {
     z-index     : 1;
 }
 
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.parallax-item {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    transition: transform 0.1s ease-out;
+}
+
+/* Position the elements randomly for demo */
+.parallax-item:nth-child(1) {
+    top: 10%;
+    left: 20%;
+}
+.parallax-item:nth-child(2) {
+    top: 50%;
+    left: 40%;
+}
+.parallax-item:nth-child(3) {
+    top: 30%;
+    left: 70%;
+}
+
+
 .swiper-container-vertical>.swiper-wrapper {
     flex-direction: column;
 }

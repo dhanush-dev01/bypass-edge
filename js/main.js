@@ -312,3 +312,17 @@
     })();
 
 })(document.documentElement);
+
+document.addEventListener('mousemove', (e) => {
+    const parallaxItems = document.querySelectorAll('.parallax-item');
+    const moveIntensity = 20;  // Control how much the elements move
+
+    parallaxItems.forEach((item, index) => {
+        const speed = (index + 1) / 10; // Adjust speed for each element
+        const xMovement = (window.innerWidth / 2 - e.pageX) * speed / moveIntensity;
+        const yMovement = (window.innerHeight / 2 - e.pageY) * speed / moveIntensity;
+
+        item.style.transform = `translate(${xMovement}px, ${yMovement}px)`;
+    });
+});
+
