@@ -3402,9 +3402,10 @@ td:last-child {
 }
 .Intro-Heading{
     padding: 0 0 20px 0 ;
-    color: #5f5e9c;
+    color: rgb(2, 125, 114);
     text-transform: capitalize;
     font-size: 50px;
+    font-weight: 550;
 }
 .intro-sub{
     font-size: 23px;
@@ -3712,7 +3713,7 @@ td:last-child {
 
 .no-js .s-header__inner,
 .ss-show .s-header__inner {
-    transition-delay: 1.5s;
+    transition-delay: 0.5s;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3961,7 +3962,7 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
-.s-works {
+.s-works , .s-services{
     padding-top   : var(--vspace-6);
     padding-bottom: var(--vspace-1);
 }
@@ -4460,3 +4461,88 @@ td:last-child {
     }
 }
 
+/* Services section */
+
+/* General Section Styling */
+.services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-family   : var(--font-2);
+    margin-bottom: 40px;
+    margin-top: -30px;
+    color: #333;
+}
+
+/* Service Card Styling */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.service-card {
+    /* background-image: url('../images/kubernetes.svg'); */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Keep this to limit max card size */
+    flex: 0 0 calc(25% - 20px); /* 4 cards per row, accounting for gaps */
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #333;
+    font-family   : var(--font-1);
+
+}
+
+.service-card p {
+    color: #1b1919;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    list-style-type: disc;
+    padding: 0;
+}
+
+.service-card ul li {
+    font-size: 1.2rem;
+    color: #161515;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
