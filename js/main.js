@@ -326,3 +326,17 @@ document.addEventListener('mousemove', (e) => {
     });
 });
 
+  function updateImageSource() {
+        const image = document.getElementById('intro-image');
+        if (window.innerWidth <= 1300) {
+            image.src = 'images/mobile.png';
+        } else {
+            image.src = 'images/intro.png';
+        }
+    }
+
+    // Initial check
+    updateImageSource();
+
+    // Update on resize
+    window.addEventListener('resize', updateImageSource);
